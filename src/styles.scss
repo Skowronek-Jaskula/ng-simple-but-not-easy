@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --sbne-light-gray: #f2f2f3;
+  --sbne-mid-gray: #c8cdd0;
+  --sbne-dark-gray: #415058;
+  --sbne-black: #1f292e;
+  --sbne-white: #eff2f7;
+
+  --sbne-color-main: #2249a4;
+  --sbne-color-highlight: #a4bdf5;
+
+  --sbnt-color-accent: #fffb7f;
+  --sbne-color-success: #a7dd3c;
+  --sbne-color-alert: #c83619;
+
+  --nav-height: 4rem;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  margin-top: 3rem;
+}
+
+hr {
+  margin-block: 4rem;
+}
+
+a {
+  color: var(--sbne-color-main);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration-color: currentColor;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}

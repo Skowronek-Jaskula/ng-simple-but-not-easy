@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--sbne-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: var(--nav-height);
+
+  a {
+    color: var(--sbne-white);
+    font-family: "Barlow Condensed";
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+    &.current {
+      color: var(--sbne-color-highlight);
+    }
+  }
+}
