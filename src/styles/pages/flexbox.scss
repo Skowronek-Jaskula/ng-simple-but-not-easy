@@ -3,9 +3,11 @@
 .quiz {
   padding: 5%;
   background-color: colors.$mid-gray;
+  display: flex;
+  flex-direction: column;
 
   &__item {
-    margin: 7rem 0 10rem;
+    margin: 5rem 0 0;
   }
 
   &__labels {
