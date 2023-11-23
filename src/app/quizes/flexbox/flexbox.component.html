@@ -1,0 +1,86 @@
+<main class="quiz">
+  <div
+    class="quiz__item"
+    *ngFor="let question of questions; let i = index; let last = last"
+  >
+    <p>{{ question.q ? question.q : "Question " + question.number }}</p>
+
+    <ng-container *ngFor="let answer of question.answers; let j = index">
+      <div
+        class="flex"
+        [ngStyle]="parseStyles(answer.container)"
+        *ngIf="answer.correct && !answer.hide"
+      >
+        <p
+          *ngIf="!last"
+          class="flex__item"
+          [ngStyle]="parseStyles(answer.items)"
+        >
+          First flex item
+        </p>
+        <h2
+          *ngIf="!last"
+          class="flex__item"
+          [ngStyle]="parseStyles(answer.items)"
+        >
+          Second flex item
+        </h2>
+        <img
+          class="flex__item"
+          [src]="
+            'https://source.unsplash.com/200x120/' +
+            (i % 2 === 0 ? '?fruit' : '?vegetable')
+          "
+          alt=""
+          [ngStyle]="parseStyles(answer.items)"
+        />
+        <p
+          *ngIf="!last"
+          class="flex__item"
+          [ngStyle]="parseStyles(answer.items)"
+        >
+          4th flex item
+        </p>
+        <h4
+          *ngIf="!last"
+          class="flex__item"
+          [ngStyle]="parseStyles(answer.items)"
+        >
+          The fifth flex{{
+            question.longItem
+              ? " item is slightly longer than_all_the_others to showcase
+          it more accurately."
+              : "."
+          }}
+        </h4>
+      </div>
+    </ng-container>
+
+    <div class="quiz__labels">
+      <ng-container *ngFor="let answer of question.answers; let j = index">
+        <label
+          [ngClass]="[
+            'quiz__labels-label',
+            answer.correct ? 'quiz__labels-label--correct' : ''
+          ]"
+          [for]="'answer_' + j + '_' + i"
+        >
+          <pre>
+          <code>
+.flex &#123; {{ answer.container }} 
+&#125;</code>
+<code>
+.flex__item &#123; {{ answer.items }}
+&#125;</code>
+</pre>
+          <input
+            type="checkbox"
+            [name]="'question' + i"
+            [id]="'answer_' + j + '_' + i"
+          />
+        </label>
+      </ng-container>
+    </div>
+    <hr />
+  </div>
+</main>

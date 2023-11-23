@@ -11,8 +11,8 @@ section {
 button {
   outline: 2px solid var(--sbne-color-main);
   outline-offset: -2px;
-  margin: 20px;
-  padding: 10px 25px;
+  margin: 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 button:hover {
@@ -21,7 +21,7 @@ button:hover {
 
 button:focus,
 button:active {
-  outline: 4px solid var(--sbne-color-highlight);
+  outline: 0.25rem solid var(--sbne-color-highlight);
 }
 
 button:active {
@@ -29,7 +29,7 @@ button:active {
 }
 
 header {
-  box-shadow: 20px 15px 20px var(--sbne-dark-gray);
+  box-shadow: 1.5rem 1rem 1.5rem var(--sbne-dark-gray);
   background-color: var(--sbne-color-main);
   color: var(--sbne-white);
   display: flex;
@@ -44,15 +44,15 @@ main {
 }
 
 aside {
-  border: 5px solid purple;
-  outline: 10px dashed pink;
+  border: 0.25rem solid purple;
+  outline: 0.5rem dashed pink;
 
   background-color: yellow;
 
   span {
     position: sticky;
-    top: 0;
-    padding: 20px;
+    top: var(--nav-height);
+    padding: 1.5rem;
   }
 }
 

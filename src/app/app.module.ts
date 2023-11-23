@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DisplayInlineComponent } from './pages/display-inline/display-inline.component';
 import { PositionComponent } from './pages/position/position.component';
+import { FlexboxComponent } from './quizes/flexbox/flexbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DisplayInlineComponent,
-    PositionComponent
+    PositionComponent,
+    FlexboxComponent
   ],
   imports: [
     BrowserModule,
