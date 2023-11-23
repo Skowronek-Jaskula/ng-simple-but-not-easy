@@ -1,24 +1,25 @@
+@use "../abstracts/colors";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
-
+$_nav-height: 4rem;
 nav {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--sbne-black);
+  background-color: colors.$black;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: var(--nav-height);
+  height: $_nav-height;
 
   a {
-    color: var(--sbne-white);
+    color: colors.$white;
     font-family: "Barlow Condensed";
     font-size: 1.25rem;
     text-transform: uppercase;
 
     &.current {
-      color: var(--sbne-color-highlight);
+      color: colors.$color-highlight;
     }
   }
 }

@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { DisplayInlineComponent } from './pages/display-inline/display-inline.component';
 import { PositionComponent } from './pages/position/position.component';
 import { FlexboxComponent } from './quizes/flexbox/flexbox.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FlexboxComponent } from './quizes/flexbox/flexbox.component';
     HeaderComponent,
     DisplayInlineComponent,
     PositionComponent,
-    FlexboxComponent
+    FlexboxComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

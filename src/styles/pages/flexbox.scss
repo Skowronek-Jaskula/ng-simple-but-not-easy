@@ -1,6 +1,8 @@
+@use "../abstracts/colors";
+
 .quiz {
   padding: 5%;
-  background-color: var(--sbne-mid-gray);
+  background-color: colors.$mid-gray;
 
   &__item {
     margin: 7rem 0 10rem;
@@ -16,19 +18,19 @@
     }
 
     &-label {
-      box-shadow: 0 1px 2px 2px var(--sbne-middark-gray);
-      background-color: var(--sbne-neutral-gray);
-      color: var(--sbnt-color-accent);
+      box-shadow: 0 1px 2px 2px colors.$middark-gray;
+      background-color: colors.$neutral-gray;
+      color: colors.$color-accent;
       padding: 0.25rem 1.5rem;
       input {
         visibility: hidden;
       }
       &:has(input:checked) {
-        background-color: var(--sbne-color-alert);
+        background-color: colors.$color-alert;
       }
       &--correct {
         &:has(input:checked) {
-          background-color: var(--sbne-color-success);
+          background-color: colors.$color-success;
           color: black;
         }
       }
@@ -40,15 +42,15 @@
 }
 
 .flex {
-  background-color: var(--sbne-white);
-  box-shadow: 0 1px 2px 2px var(--sbne-middark-gray);
+  background-color: colors.$white;
+  box-shadow: 0 1px 2px 2px colors.$middark-gray;
   padding: 1px;
   margin-bottom: 1rem;
 
   &__item {
     margin: 0;
-    outline: solid var(--sbne-color-main) 1px;
+    outline: solid colors.$color-main 1px;
     outline-offset: -1px;
-    background-color: var(--sbne-color-highlight);
+    background-color: colors.$color-highlight;
   }
 }

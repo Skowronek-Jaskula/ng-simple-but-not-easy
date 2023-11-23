@@ -1,37 +1,38 @@
+@use "../abstracts/colors";
 section {
   margin-left: 2rem;
   margin-right: 2rem;
-  background-color: var(--sbne-light-gray);
+  background-color: colors.$light-gray;
   padding: 1rem;
   &:focus-within {
-    outline: 2px dotted var(--sbne-mid-gray);
+    outline: 2px dotted colors.$mid-gray;
   }
 }
 
 button {
-  outline: 2px solid var(--sbne-color-main);
+  outline: 2px solid colors.$color-main;
   outline-offset: -2px;
   margin: 1.5rem;
   padding: 0.5rem 1.5rem;
 }
 
 button:hover {
-  box-shadow: 0 1px 1px 1px var(--sbne-dark-gray);
+  box-shadow: 0 1px 1px 1px colors.$dark-gray;
 }
 
 button:focus,
 button:active {
-  outline: 0.25rem solid var(--sbne-color-highlight);
+  outline: 0.25rem solid colors.$color-highlight;
 }
 
 button:active {
-  box-shadow: 0 1px 1px 2px var(--sbne-dark-gray);
+  box-shadow: 0 1px 1px 2px colors.$dark-gray;
 }
 
 header {
-  box-shadow: 1.5rem 1rem 1.5rem var(--sbne-dark-gray);
-  background-color: var(--sbne-color-main);
-  color: var(--sbne-white);
+  box-shadow: 1.5rem 1rem 1.5rem colors.$dark-gray;
+  background-color: colors.$color-main;
+  color: colors.$white;
   display: flex;
   align-items: center;
   height: 3rem;
@@ -57,7 +58,7 @@ aside {
 }
 
 footer {
-  background-color: var(--sbne-light-gray);
+  background-color: colors.$light-gray;
   height: 5rem;
   display: flex;
   align-items: center;
