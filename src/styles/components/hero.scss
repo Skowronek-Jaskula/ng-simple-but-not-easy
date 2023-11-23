@@ -1,10 +1,24 @@
+@use "../abstracts/colors";
 .hero {
   height: 75vh;
   background-image: url("../../assets/images/hero-background.jpg");
   background-size: cover;
   background-position: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__logo {
     width: 100px;
+  }
+
+  &__title {
+    font-size: 5rem;
+    line-height: 1;
+    color: colors.$white;
+  }
+
+  &__buttons {
   }
 }
