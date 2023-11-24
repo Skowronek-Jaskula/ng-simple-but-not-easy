@@ -1,36 +1,63 @@
-<div class="container-fluid">
+<div class="container">
   <form>
     <div class="row my-5">
-      <div class="col-4">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
+      <div class="col-4 py-3">
+        <div class="input-group">
+          <label class="me-2" for="name">Name</label>
+          <input type="text" id="name" placeholder="Type sth" />
+        </div>
       </div>
 
-      <div class="col-4">
-        <label for="Lastname">Lastname</label>
+      <div class="col-4 py-3">
+        <label class="me-2" for="Lastname">Lastname</label>
         <input type="text" id="Lastname" />
       </div>
 
-      <div class="col-4">
-        <label for="email">email</label>
+      <div class="col-4 py-3">
+        <label class="me-2" for="email">email</label>
         <input type="email" id="email" />
       </div>
     </div>
     <div class="row my-5">
-      <div class="col-4">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
-      </div>
-
-      <div class="col-4">
-        <label for="Lastname">Lastname</label>
-        <input type="text" id="Lastname" />
-      </div>
-
-      <div class="col-4">
-        <label for="email">email</label>
-        <input type="text" id="email" />
+      <div class="col-6">
+        <label class="me-2" for="voivod">Województwo</label>
+        <select type="text" id="voivod">
+          <option value="wlkp">wlkp</option>
+          <option value="maz">maz</option>
+          <option value="dln">dln</option>
+        </select>
       </div>
     </div>
+    <button>Submit</button>
+  </form>
+
+  <form>
+    <div class="row my-5">
+      <div class="col-4 py-3">
+        <label class="me-2" for="form2_name">Name</label>
+        <input type="text" id="form2_name" placeholder="Type sth" />
+      </div>
+
+      <div class="col-4 py-3">
+        <label class="me-2" for="form2_Lastname">Lastname</label>
+        <input type="text" id="form2_Lastname" />
+      </div>
+
+      <div class="col-4 py-3">
+        <label class="me-2" for="form2_email">email</label>
+        <input type="email" id="form2_email" />
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-6">
+        <label class="me-2" for="form2_voivod">Województwo</label>
+        <select type="text" id="form2_voivod">
+          <option value="wlkp">wlkp</option>
+          <option value="maz">maz</option>
+          <option value="dln">dln</option>
+        </select>
+      </div>
+    </div>
+    <button>Submit</button>
   </form>
 </div>

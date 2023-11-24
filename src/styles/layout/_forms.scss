@@ -1,7 +1,64 @@
-form .col-4:nth-child(2n + 1) {
-  background-color: gray;
-}
+@use "../abstracts/colors";
 
 form .row .col-4:nth-child(2) {
-  background-color: lime;
+  background-color: colors.$light-gray;
+}
+
+form:focus-within {
+  outline: dashed 2px colors.$color-main;
+  outline-offset: 0.5rem;
+}
+
+option {
+  height: 40px;
+}
+
+select,
+input {
+  height: 2rem;
+  font-family: monospace;
+  background-color: colors.$black;
+  color: colors.$white;
+  border-radius: 0.25rem;
+  padding-inline: 1rem;
+  &:hover {
+    outline: 2px solid colors.$color-alert;
+  }
+  &:focus-visible {
+    outline: 4px solid colors.$color-success;
+  }
+  &:active {
+    background-color: colors.$color-highlight;
+  }
+}
+::placeholder {
+  color: colors.$color-highlight;
+}
+
+button {
+  position: relative;
+  padding-inline: 2rem;
+  color: colors.$color-main;
+  &:active {
+    background-color: colors.$color-highlight;
+    color: colors.$color-main;
+  }
+  &::before {
+    content: "";
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.75rem;
+    border: 2px solid colors.$color-main;
+  }
+  &::after {
+    content: "";
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.75rem;
+    border: 2px solid colors.$color-main;
+  }
 }

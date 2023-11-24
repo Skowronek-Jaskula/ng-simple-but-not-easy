@@ -54,3 +54,10 @@ a:focus {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
 }
+
+input {
+  border: 0;
+  outline: none;
+  max-width: 100%;
+  border-radius: 0.25rem;
+}
