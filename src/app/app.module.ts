@@ -9,6 +9,7 @@ import { PositionComponent } from './pages/position/position.component';
 import { FlexboxComponent } from './quizes/flexbox/flexbox.component';
 import { HeroComponent } from './hero/hero.component';
 import { BootstrapShowcaseComponent } from './pages/bootstrap-showcase/bootstrap-showcase.component';
+import { FormsComponent } from './pages/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BootstrapShowcaseComponent } from './pages/bootstrap-showcase/bootstrap
     PositionComponent,
     FlexboxComponent,
     HeroComponent,
-    BootstrapShowcaseComponent
+    BootstrapShowcaseComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

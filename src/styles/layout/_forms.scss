@@ -1,0 +1,7 @@
+form .col-4:nth-child(2n + 1) {
+  background-color: gray;
+}
+
+form .row .col-4:nth-child(2) {
+  background-color: lime;
+}
